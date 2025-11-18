@@ -1,0 +1,61 @@
+{
+	"name": "luminara-cookiejar",
+	"version": "1.0.0",
+	"description": "CookieJar plugin for Luminara - automatic Cookie / Set-Cookie handling in Node using tough-cookie.",
+	"author": {
+		"name": "Jonathan Miller",
+		"email": "jonathan@miller28.com",
+		"url": "https://www.linkedin.com/in/miller28/"
+	},
+	"main": "src/index.js",
+	"module": "src/index.js",
+	"types": "types/index.d.ts",
+	"type": "module",
+	"keywords": [
+		"luminara",
+		"cookiejar",
+		"cookies",
+		"http-client",
+		"fetch",
+		"tough-cookie",
+		"nodejs",
+		"server-side",
+		"ssr"
+	],
+	"license": "MIT",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/miller-28/luminara-cookiejar.git"
+	},
+	"peerDependencies": {
+		"luminara": "file:../luminara"
+	},
+	"dependencies": {
+		"tough-cookie": "^6.0.0"
+	},
+	"scripts": {
+		"test": "cd test-cli && npm test",
+		"lint": "eslint src/**/*.js test-cli/**/*.js",
+		"lint:fix": "eslint src/**/*.js test-cli/**/*.js --fix"
+	},
+	"exports": {
+		".": {
+			"import": "./src/index.js",
+			"types": "./types/index.d.ts"
+		}
+	},
+	"files": [
+		"src/",
+		"types/",
+		"README.md",
+		"LICENSE"
+	],
+	"engines": {
+		"node": ">=18.0.0"
+	},
+	"devDependencies": {
+		"@eslint/js": "^9.39.1",
+		"eslint": "^9.39.1",
+		"globals": "^16.5.0"
+	}
+}

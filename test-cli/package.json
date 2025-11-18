@@ -1,0 +1,31 @@
+{
+	"name": "luminara-cookiejar-tests",
+	"version": "1.0.0",
+	"description": "Test suite for Luminara CookieJar plugin",
+    "author": {
+		"name": "Jonathan Miller",
+		"email": "jonathan@miller28.com",
+		"url": "https://www.linkedin.com/in/miller28/"
+	},
+	"type": "module",
+	"scripts": {
+		"test": "node testRunner.js",
+		"test:basic": "node tests/basic.test.js",
+		"test:shared": "node tests/sharedJar.test.js",
+		"test:attributes": "node tests/cookieAttributes.test.js",
+		"test:expiration": "node tests/expiration.test.js",
+		"test:errors": "node tests/errorHandling.test.js",
+		"test:edge": "node tests/edgeCases.test.js"
+	},
+	"keywords": [
+		"luminara",
+		"cookiejar",
+		"cookies",
+		"testing",
+		"http-client"
+	],
+	"license": "MIT",
+	"dependencies": {
+		"chalk": "^5.3.0"
+	}
+}

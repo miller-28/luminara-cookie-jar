@@ -1,0 +1,12 @@
+# Ignore local development artifacts
+.github/copilot-instructions.md
+.env.local
+.DS_Store
+node_modules/
+coverage
+.git
+*.log
+**/design-*.md
+
+# ESLint reports
+eslint-report.txt
