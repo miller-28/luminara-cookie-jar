@@ -1,4 +1,4 @@
-# Luminara-CookieJar Testing Environment
+# Luminara-Cookie-Jar Testing Environment
 
 Comprehensive test suite for the Luminara CookieJar plugin using a proven testing framework.
 

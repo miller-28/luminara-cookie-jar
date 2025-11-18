@@ -1,5 +1,5 @@
 {
-	"name": "luminara-cookiejar-tests",
+	"name": "luminara-cookie-jar-tests",
 	"version": "1.0.0",
 	"description": "Test suite for Luminara CookieJar plugin",
     "author": {
@@ -28,6 +28,6 @@
 	"dependencies": {
 		"chalk": "^5.3.0",
 		"luminara": ">=1.0.0",
-		"luminara-cookiejar": "file:.."
+		"luminara-cookie-jar": "file:.."
 	}
 }

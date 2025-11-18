@@ -1,8 +1,8 @@
-# 🍪 luminara-cookiejar
+# 🍪 luminara-cookie-jar
 
-[![npm version](https://badge.fury.io/js/luminara-cookiejar.svg)](https://www.npmjs.com/package/luminara-cookiejar)
-[![npm downloads](https://img.shields.io/npm/dm/luminara-cookiejar.svg)](https://www.npmjs.com/package/luminara-cookiejar)
-[![license](https://img.shields.io/npm/l/luminara-cookiejar.svg)](https://github.com/miller-28/luminara-cookiejar/blob/main/LICENSE)
+[![npm version](https://badge.fury.io/js/luminara-cookie-jar.svg)](https://www.npmjs.com/package/luminara-cookie-jar)
+[![npm downloads](https://img.shields.io/npm/dm/luminara-cookie-jar.svg)](https://www.npmjs.com/package/luminara-cookie-jar)
+[![license](https://img.shields.io/npm/l/luminara-cookie-jar.svg)](https://github.com/miller-28/luminara-cookie-jar/blob/main/LICENSE)
 
 **CookieJar plugin for Luminara** - Automatic `Cookie` / `Set-Cookie` header management for server-side environments using [tough-cookie](https://github.com/salesforce/tough-cookie).
 
@@ -11,7 +11,7 @@ Perfect for Node.js, SSR applications, CLI tools, and test harnesses where cooki
 ## 📦 Installation
 
 ```bash
-npm install luminara luminara-cookiejar
+npm install luminara luminara-cookie-jar
 ```
 
 **Note:** `tough-cookie` is automatically installed as a dependency.
@@ -20,7 +20,7 @@ npm install luminara luminara-cookiejar
 
 ```javascript
 import { createLuminara } from 'luminara';
-import { cookieJarPlugin } from 'luminara-cookiejar';
+import { cookieJarPlugin } from 'luminara-cookie-jar';
 
 // Create client with cookie support
 const client = createLuminara({
@@ -278,7 +278,7 @@ This plugin integrates seamlessly with Luminara's enhanced interceptor system:
 
 ```javascript
 import { createLuminara } from 'luminara';
-import { cookieJarPlugin } from 'luminara-cookiejar';
+import { cookieJarPlugin } from 'luminara-cookie-jar';
 
 const api = createLuminara({
   baseURL: 'https://api.example.com',
