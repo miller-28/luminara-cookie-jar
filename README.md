@@ -1,5 +1,9 @@
 # 🍪 luminara-cookiejar
 
+[![npm version](https://badge.fury.io/js/luminara-cookiejar.svg)](https://www.npmjs.com/package/luminara-cookiejar)
+[![npm downloads](https://img.shields.io/npm/dm/luminara-cookiejar.svg)](https://www.npmjs.com/package/luminara-cookiejar)
+[![license](https://img.shields.io/npm/l/luminara-cookiejar.svg)](https://github.com/miller-28/luminara-cookiejar/blob/main/LICENSE)
+
 **CookieJar plugin for Luminara** - Automatic `Cookie` / `Set-Cookie` header management for server-side environments using [tough-cookie](https://github.com/salesforce/tough-cookie).
 
 Perfect for Node.js, SSR applications, CLI tools, and test harnesses where cookies aren't automatically managed by the browser.

@@ -1,6 +1,6 @@
 {
 	"name": "luminara-cookiejar",
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"description": "CookieJar plugin for Luminara - automatic Cookie / Set-Cookie handling in Node using tough-cookie.",
 	"author": {
 		"name": "Jonathan Miller",
@@ -22,13 +22,12 @@
 		"server-side",
 		"ssr"
 	],
-	"license": "MIT",
 	"repository": {
 		"type": "git",
 		"url": "https://github.com/miller-28/luminara-cookiejar.git"
 	},
 	"peerDependencies": {
-		"luminara": "file:../luminara"
+		"luminara": ">=1.0.0"
 	},
 	"dependencies": {
 		"tough-cookie": "^6.0.0"
@@ -57,5 +56,6 @@
 		"@eslint/js": "^9.39.1",
 		"eslint": "^9.39.1",
 		"globals": "^16.5.0"
-	}
+	},
+  "license": "MIT"
 }

@@ -78,7 +78,7 @@ Performance measurement tool:
 import { TestSuite, MockServer, assert, assertEqual } from '../testUtils.js';
 import { runTestSuiteIfDirect } from '../runTestSuite.js';
 import { createLuminara } from 'luminara';
-import { cookieJarPlugin } from '../../dist/index.cjs';
+import { cookieJarPlugin } from '../../src/index.js';
 
 // Create test suite and mock server
 const suite = new TestSuite('Cookie Management Tests');
