@@ -1,4 +1,7 @@
-// src/index.js
+/**
+ * Luminara Cookie Jar Plugin
+ * Automatic Cookie/Set-Cookie header management for server-side environments.
+ */
 import { CookieJar } from 'tough-cookie';
 
 /**
