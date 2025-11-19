@@ -1,11 +1,13 @@
 # 🍪 luminara-cookie-jar
 
-[![Website](https://img.shields.io/badge/Website-luminara.website-blue?style=flat-square&logo=safari)](https://luminara.website)
+[![Website](https://img.shields.io/badge/Website-luminara.website-blue?style=flat-square&logo=web)](https://luminara.website)
 [![GitHub](https://img.shields.io/badge/GitHub-miller--28%2Fluminara--cookie--jar-black?style=flat-square&logo=github)](https://github.com/miller-28/luminara-cookie-jar)
 [![npm](https://img.shields.io/npm/v/luminara-cookie-jar?style=flat-square&logo=npm)](https://www.npmjs.com/package/luminara-cookie-jar)
 [![license](https://img.shields.io/npm/l/luminara-cookie-jar.svg)](https://github.com/miller-28/luminara-cookie-jar/blob/main/LICENSE)
 
 **CookieJar plugin for Luminara** - Automatic `Cookie` / `Set-Cookie` header management for server-side environments using [tough-cookie](https://github.com/salesforce/tough-cookie).
+
+This plugin gives Luminara full browser-like cookie behavior in Node.js and server environments.
 
 Perfect for Node.js, SSR applications, CLI tools, and test harnesses where cookies aren't automatically managed by the browser.
 
@@ -41,18 +43,18 @@ console.log(await client.jar.getCookies('https://api.example.com'));
 
 ## ✨ Features
 
-- 🔄 **Automatic Cookie Management** - Stores `Set-Cookie` from responses, sends `Cookie` in requests
+- 🔄 **Automatic Cookie Management** - Captures `Set-Cookie` and sends `Cookie` automatically
 - 🌐 **Universal Compatibility** - Node.js, SSR, CLI tools, test environments
-- 🔌 **Zero Configuration** - Works out of the box with sensible defaults
-- 🤝 **Shared Jars** - Share cookie jars across multiple client instances
+- 🔌 **Zero Configuration** - Works out of the box with safe defaults
+- 🤝 **Shared Jars** - Share cookie jars across multiple clients
 - 📝 **Full TypeScript Support** - Complete type definitions included
-- 🎯 **Standards Compliant** - Uses tough-cookie for RFC 6265 cookie specification
-- 🔒 **Merge-Friendly** - Respects and merges with existing `Cookie` headers
-- ⚡ **Zero External Dependencies** - Only peer depends on Luminara and tough-cookie
-- 🛡️ **Robust Error Handling** - Gracefully handles malformed cookies without breaking requests
-- 🔁 **Retry Compatible** - Cookies refreshed and sent on each retry attempt
-- 🎭 **Hedging Support** - Works seamlessly with Luminara's request hedging
-- 📊 **Stats Integration** - Full integration with Luminara's stats system
+- 🎯 **Standards Compliant** - Backed by tough-cookie (RFC 6265)
+- 🔒 **Cookie-Safe Merging** - Manual `Cookie` headers merge with jar cookies
+- ⚡ **Minimal Dependencies** - Uses only Luminara and tough-cookie
+- 🛡️ **Robust Error Handling** - Malformed cookies handled gracefully
+- 🔁 **Retry Compatible** - Cookies refreshed for each retry attempt
+- 🎭 **Hedging Support** - Works seamlessly with Luminara's hedging
+- 📊 **Stats Integration** - Every cookie event tracked by Luminara stats
 
 ## 📖 Usage
 
@@ -77,6 +79,8 @@ client.use(cookieJarPlugin());
 ### Shared Cookie Jar
 
 Share cookies across multiple client instances:
+
+Note: Importing CookieJar directly is optional and only required for advanced shared-session scenarios.
 
 ```javascript
 import { CookieJar } from 'tough-cookie';
@@ -309,7 +313,7 @@ const response = await api.get('/protected-resource');
 - **HttpOnly cookies**: Fully supported and respected
 - **Secure cookies**: Only sent over HTTPS
 - **Domain/Path scoping**: Enforced by tough-cookie
-- **Cookie expiration**: Automatic cleanup of expired cookies
+- **Cookie expiration**: Expiration is fully enforced by tough-cookie
 - **Same-site policies**: Respected according to RFC 6265
 
 ## 📄 License
